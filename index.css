@@ -1,0 +1,695 @@
+
+    /* init */
+
+    * {
+        margin: 0; padding: 0; border: 0;
+    }
+
+    body {
+        background-color: #fff;
+        color: #565656;
+        font-size: 14px;
+        font-family: "맑은 고딕", "Segoe UI";
+        font-weight: normal;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none;
+        color: #565656;
+    }
+
+    li {list-style: none;}
+
+    /* style=============================================================================== */
+
+    /* --------------------------------------------------------------------------------
+    header
+    -------------------------------------------------------------------------------- */
+
+    header {
+        position: fixed;
+        top: 0; left: 0;
+        z-index: 100;
+        width: 100vw; height: 126px;
+        background-color: #fff;
+        background-image: url(images/header_line.png);
+        background-position: center 70px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #header_wrap {
+        position: relative;
+        width: 1200px; height: 100%;
+        margin: 0 auto;
+    }
+
+    #top_bar {
+        position: absolute;
+        top: 26px;
+        left: 86px;
+    }
+
+    #top_menu {
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        font-size: 12px;
+    }
+
+    #top_menu li {
+        float: left;
+        margin-left: 20px;
+    }
+
+    #top_menu li a {
+        color: #b298b3;
+    }
+
+    #top_menu li a img {
+        margin-right: 2px;
+    }
+
+    #logo {
+        position: absolute;
+        top: 22px;
+        left: 50%;
+        margin-left: -59px;
+    }
+
+    #main_menu_left {
+        position: absolute;
+        bottom: 16px;
+        left: 96px;
+    }
+
+    #main_menu_right {
+        position: absolute;
+        bottom: 16px;
+        right: 118px;
+    }
+
+    #main_menu_left li, #main_menu_right li {
+        float: left;
+        font-size: 18px;
+        font-family: "Segoe UI";
+        margin-right: 75px;
+    }
+
+    #main_menu_right li:last-child {
+        margin-right: 0;
+    }
+
+    #main_menu_left li a, #main_menu_right li a {
+        color: #b298b3;
+        transition: color 0.3s ease-out;
+    }
+
+    #main_menu_left li a:hover, #main_menu_right li a:hover {
+        color: #b8559a;
+    }
+    
+    #main_menu_left li:first-child img {
+        position: relative;
+        top: -2px;
+        left: 5px;
+    }
+
+    /* --------------------------------------------------------------------------------
+    main banner
+    -------------------------------------------------------------------------------- */
+
+    #main_banner {
+        position: relative;
+        width: 100%; height: 530px;
+        margin-top: 126px;
+    }
+
+    #main_banner:hover #main_btn_left {
+        opacity: 1;
+        margin-left: -20px;
+    }
+
+    #main_banner:hover #main_btn_right {
+        opacity: 1;
+        margin-right: -20px;
+    }
+
+    #main_btn_left {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+        left: 15%;
+        z-index: 99;
+        
+        transition: 0.3s ease-out;
+    }
+
+    #main_btn_right {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+        right: 15%;
+        z-index: 99;
+
+        transition: 0.3s ease-out;
+    }
+
+    #main_slider {
+        position: relative;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+    }
+    
+    .slide {
+        position: absolute;
+        top: 0; left: 100%;
+        width: 100%; height: 100%;
+    }
+
+    .slide.on  {
+        left: 0;
+    }
+
+    .slide1 {background: url(images/main_banner01.png) no-repeat center/auto;}
+    .slide2 {background: url(images/main_banner02.png) no-repeat center/auto;}
+    .slide3 {background: url(images/main_banner03.png) no-repeat center/auto;}
+
+    #main_dot {
+        position: absolute;
+        bottom: -30px; left: 50%;
+        z-index: 99;
+    }
+
+    #main_dot li {
+        width: 9px; height: 9px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(images/circle_hollow.png);
+        float: left; margin-right: 20px;
+        cursor: pointer;
+    }
+
+    #main_dot li.on {
+        background-image: url(images/circle_fill.png);
+    }
+
+    #main_dot li:last-child {
+        margin-right: 0;
+    }
+ 
+    /* --------------------------------------------------------------------------------
+    section01 Bestseller
+    -------------------------------------------------------------------------------- */
+
+    #section01 {
+        position: relative;
+        width: 100%; height: 804px;
+        padding-top: 274px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .section_title {
+        position: absolute;
+        width: 100%; height: 80px;
+        top: 142px;
+    }   
+
+    .section_title h2 {
+        font: normal 36px "Segoe UI";
+        line-height: 36px;
+        color: #755d76;
+    }
+
+    .section_title .line {
+        width: 100%; height: 2px;
+        background: url(images/line.png) center center no-repeat;
+        background-size: contain;
+        margin: 14px 0;
+    }
+
+    .section_title p {
+        font: normal 14px "맑은 고딕";
+        line-height: 14px;
+        color: #bba4bc;
+    }
+
+    #s01_btn_left {
+        opacity: 0;
+        position: absolute;
+        top: 50%; margin-top: -27.5px; left: 20%;
+        z-index: 99;
+
+        transition: 0.3s ease-out;
+    }
+
+    #s01_btn_right {
+        opacity: 0;
+        position: absolute;
+        top: 50%; margin-top: -27.5px; right: 20%;
+        z-index: 99;
+
+        transition: 0.3s ease-out;
+    }
+
+    #s01_slider_wrap {
+        width: 100%; height: 530px;
+        position: relative;
+    }
+
+    #s01_slider_wrap:hover #s01_btn_left {
+        opacity: 1.0;
+        margin-left: -20px;
+    }
+
+    #s01_slider_wrap:hover #s01_btn_right {
+        opacity: 1.0;
+        margin-right: -20px;
+    }
+
+    #s01_slider {
+        position: relative; top: 0; left: 50%;
+        width: 1000%; height: 500px;
+        margin-left: -1214px;
+    }
+
+    .s01_box {
+        position: relative;
+        width: 928px; height: 500px;
+        top: 30px;
+        margin: 0 -60px; text-align: left;
+        opacity: 0.5; float: left;
+
+        transition: 1.0s ease-out;
+    }
+
+    .s01_box.box_up a {
+        display: block;
+        width: 100%; height: 100%;
+    }
+
+    .box_up {
+        opacity: 1.0;
+        z-index: 96;
+        top: 0;
+    }
+
+    .s01_box1 {
+        background: url(images/best_box01.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .s01_box2 {
+        background: url(images/best_box02.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .s01_box3 {
+        background: url(images/best_box03.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .s01_box h3, .s01_box p {
+        position: absolute;
+        top: 125px;
+        left: 544px;
+    }
+
+    .s01_box h3 {
+        font-size: 36px;
+        line-height: 44px;
+        color: #5d5786;
+    }
+
+    .s01_box p {
+        top: 300px;
+        font-size: 24px;
+        color: #5d5786;
+    }
+
+    .cancelline {
+        font-size: 14px;
+        color: #bba4bc;
+        text-decoration: line-through;
+    }
+
+    .s01_box p:last-child {
+        font-size: 14px;
+        top: 340px;
+    }
+
+    /* --------------------------------------------------------------------------------
+    section02 New Item
+    -------------------------------------------------------------------------------- */
+
+    #section02 {
+        position: relative;
+        width: 1200px; height: 750px;
+        margin: 0 auto;
+        padding-top: 250px;
+        box-sizing: border-box;
+    }
+
+    #section02 .section_title {
+        top: 117px;
+    }
+
+    #s02_box01 {
+        position: relative;
+        width: 585px; height: 500px;
+        float: left;
+        background: url(images/new_box01.png) center center no-repeat;
+        background-size: cover;
+        text-align: left;
+    }
+
+    #s02_box01 a {
+        display: block;
+        width: 100%; height: 100%;
+    }
+
+    #s02_box01 h3 {
+        position: absolute;
+        top: 49px;
+        left: 300px;
+        font-size: 36px;
+        line-height: 42px;
+        color: #565656;
+        font-weight: bold;
+    }
+
+    #s02_box01 p {
+        position: absolute;
+        top: 148px;
+        left: 300px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #565656;
+    }
+
+    #s02_box02, #s02_box03 {
+        width: 585px; height: 235px;
+        float: right;
+    }
+
+    #s02_box03 {
+        margin-top: 30px;
+    }
+
+    #s02_box02 img, #s02_box03 img {
+        height: 235px;
+        float: left;
+    }
+
+    .s02_contxt {
+        position: relative;
+        width: 273px; height: 100%;
+        float: right;
+        background-color: #fdfbfa;
+        text-align: left;
+    }
+
+    .s02_contxt h3 {
+        position: absolute;
+        font-size: 30px;
+        line-height: 36px;
+        top: 48px;
+        left: 47px;
+    }
+
+    .s02_contxt p {
+        position: absolute;
+        font-size: 16px;
+        line-height: 20px;
+        top: 148px;
+        left: 47px;
+    }
+
+    /* --------------------------------------------------------------------------------
+    section03 Icon Menu
+    -------------------------------------------------------------------------------- */
+
+    #s03_icons {
+        width: 986px; height: 431px;
+        margin: 0 auto;
+        padding: 140px 0;
+        box-sizing: border-box;
+    }
+
+    #s03_icons li {
+        float: left;
+        margin-right: 95px;
+    }
+
+    #s03_icons li:last-child {
+        margin-right: 0;
+    }
+
+    #s03_icons li p {
+        font-size: 18px;
+        line-height: 18px;
+        color: #565656;
+        margin-top: 24px;
+    }
+
+    /* --------------------------------------------------------------------------------
+    section04 Banner01
+    -------------------------------------------------------------------------------- */
+
+    #section04 {
+        position: relative;
+        width: 100%; height: 220px;
+        background: url(images/event_banner01.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    #s04_box {
+        position: absolute;
+        width: 517px; height: 100%;
+        top: 55px;
+        right: 11%;
+        text-align: left;
+        color: #5d5786;
+    }
+
+    #s04_box h3 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .pink {
+        color: #ba7f88;
+    }
+
+    #s04_box p {
+        margin-top: 28px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    #s04_box p:last-child {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /* --------------------------------------------------------------------------------
+    section05 Banner02
+    -------------------------------------------------------------------------------- */
+
+    #section05 {
+        width: 100%; height: 400px;
+        margin-top: 165px;
+        background: url(images/event_banner02.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    #s05_box {
+        width: 570px;
+        margin: 0 auto;
+        text-align: center;
+        color: #5d5786;
+    }
+
+    #s05_box h3 {
+        font-size: 36px;
+        line-height: 36px;
+        padding-top: 33px;
+        top: 33px;
+    }
+
+    #s05_box p {
+        font-size: 24px;
+        line-height: 24px;
+        float: left;
+        text-align: left;
+        padding-top: 38px;
+    }
+
+    #s05_box p:last-child {
+        float: right;
+        text-align: right;
+    }
+
+    #s05_box p:last-child span {
+        font-size: 14px;
+    }
+    
+    /* --------------------------------------------------------------------------------
+    section06 Story Book
+    -------------------------------------------------------------------------------- */
+
+    #section06 {
+        position: relative;
+        width: 1200px; height: 765px;
+        margin: 0 auto;
+        padding-top: 290px;
+    }
+
+    #section06 .section_title {
+        top: 157px;
+    }
+
+    #s06_box01, #s06_box02 {
+        width: 585px; height: 500px;
+    }
+
+    #s06_box01 {
+        float: left;
+        background: url(images/story_box01.png) center center no-repeat;
+        background-size: cover;
+    }
+    
+    #s06_box02 {
+        float: right;
+        background: url(images/story_box02.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    #s06_contxt01 a, #s06_contxt02 a {
+        display: block;
+        float: left;
+        width: 615px; height: 235px;
+        background-color: #fdfbfa;
+        text-align: left;
+        padding: 50px 90px;
+        box-sizing: border-box;
+    }
+    
+    #s06_contxt01 a {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    
+    #s06_contxt02 a {
+        text-align: right;
+        margin-top: 30px;
+    }
+
+    #s06_contxt01 h3, #s06_contxt02 h3 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    
+    #s06_contxt01 p, #s06_contxt02 p {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 30px;
+    }
+    
+    /* --------------------------------------------------------------------------------
+    section07 Items
+    -------------------------------------------------------------------------------- */
+
+    #section07 {
+        width: 1200px; height: 410px;
+        margin: 205px auto 0 auto;
+    }
+
+    .s07_box {
+        width: 380px; height: 380px;
+        float: left;
+        margin-right: 30px;
+    }
+
+    .s07_box:last-child {
+        margin-right: 0;
+    }
+
+    .s07_box a {
+        display: block;
+        width: 100%; height: 30px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .s07_box li:first-child {
+        float: left;
+        padding-left: 15px;
+        box-sizing: border-box;
+        background: url(images/bullet_left.png) 5px center no-repeat;
+    }
+
+    .s07_box li:last-child {
+        float: right;
+    }
+    
+    /* --------------------------------------------------------------------------------
+    footer
+    -------------------------------------------------------------------------------- */
+
+    footer {
+        width: 100%; height: 300px;
+        background-color: #f9f7f7;
+        margin-top: 210px;
+    }
+
+    #footer_menu {
+        width: 1200px; height: 50px;
+        margin: 0 auto;
+        background: url(images/line.png) 0 bottom no-repeat;
+        background-size: contain;
+    }
+
+    #footer_menu li {
+        width: 20%; height: 100%;
+        text-align: center;
+        line-height: 50px;
+        float: left;
+        font-size: 16px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: normal;
+        margin-top: 23px;
+        color: #755d76;
+    }
+
+    #footer_list {
+        width: 680px;
+        font-size: 12px;
+        margin: 35px auto 0 auto;
+    }
+
+    #footer_list > li {
+        margin-right: 60px;
+        text-align: left;
+        float: left;
+    }
+
+    #footer_list > li:last-child {
+        margin-right: 0;
+    }
+
+    .copyright {
+        margin-top: 113px;
+    }

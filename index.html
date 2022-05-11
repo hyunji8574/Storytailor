@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryTailor</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/jquery.easie.js"></script>
+    <script src="js/index.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <!--start header-->
+    <header>
+        <div id="header_wrap">
+            <div id="top_bar">
+                <a href="#"><img src="images/bars.png" alt="bars"></a>
+            </div>
+            <ul id="top_menu">
+                <li><a href="#"><img src="images/icon_login.png" alt="icon_login">Login</a></li>
+                <li><a href="#"><img src="images/icon_cart.png" alt="icon_cart">Cart</a></li>
+                <li><a href="#"><img src="images/icon_home.png" alt="icon_home">Home</a></li>
+            </ul>
+            <div id="logo">
+                <a href="#"><img src="images/storytailor_logo.png" alt="storytailor_logo"></a>
+            </div>
+            <ul id="main_menu_left">
+                <li><a href="#">All Categories&nbsp;<img src="images/bullet_down.png" alt="bullet_down"></a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Best</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Theme</a></li>
+            </ul>
+            <ul id="main_menu_right">
+                <li><a href="#">Notice</a></li>
+                <li><a href="#">Review</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--end header-->
+
+    <!--start main_banner-->
+    <div id="main_banner">
+        <div id="main_btn_left">
+            <a href="#">
+                <img src="images/btn_arrow_left.png" alt="btn_arrow">
+            </a>
+        </div>
+        <div id="main_btn_right">
+            <a href="#">
+                <img src="images/btn_arrow_right.png" alt="btn_arrow">
+            </a>
+        </div>
+        <ul id="main_slider">
+            <li class="slide slide1 on"></li>
+            <li class="slide slide2"></li>
+            <li class="slide slide3"></li>
+        </ul>
+        <ul id="main_dot">
+            <!-- 슬라이드 개수에 맞춰 동적생성(li추가하지 마세요) -->
+        </ul>
+        </div>
+    <!--end main_banner-->
+
+    <!--start Bestseller-->
+    <section id="section01">
+        <div class="section_title">
+            <h2>Bestseller</h2>
+            <div class="line"></div>
+            <p>언제나 사랑받는 인기 상품</p>
+        </div>
+        <div id="s01_slider_wrap">
+            <div id="s01_btn_left">
+                <a href="#"><img src="images/btn_arrow_left.png" alt="btn_arrow"></a>
+            </div>
+            <div id="s01_btn_right">
+                <a href="#"><img src="images/btn_arrow_right.png" alt="btn_arrow"></a>
+            </div>
+            <ul id="s01_slider">
+                <li class="s01_box s01_box1">
+                    <a href="#">
+                        <h3>장난감 나라<br>
+                            노트</h3>
+                        <p><span class="cancelline">5,500</span> 4,500원</p>
+                        <p>~3.31 까지</p>              
+                    </a>
+                </li>
+                <li class="s01_box s01_box2 box_up">
+                    <a href="#">
+                        <h3>오르카<br>
+                            범고래 다이어리<br>
+                            with 펜
+                        </h3>
+                        <p><span class="cancelline">13,500</span> 10,500원</p>
+                        <p>~3.31 까지</p>
+                    </a>
+                </li>
+                <li class="s01_box s01_box3">
+                    <a href="#">
+                        <h3>빨간머리 앤<br>
+                            펜슬 케이스</h3>
+                        <p><span class="cancelline">7,800</span> 6,500원</p>
+                        <p>~3.31 까지</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--end Bestseller-->
+
+    <!--start New Item-->
+    <section id="section02">
+        <div class="section_title">
+            <h2>New Item</h2>
+            <div class="line"></div>
+            <p>새롭게 출시된 상품</p>
+        </div>
+        <div id="s02_box01">
+            <a href="#">
+                <h3>열대어<br>
+                    수납박스 3종</h3>
+                <p>물고기가 프린트된<br>
+                    귀여운 다용도 수납박스</p>
+            </a>
+        </div>
+        <div id="s02_box02">
+            <a href="#">
+                <img src="images/new_box02.png" alt="new_box02">
+                <div class="s02_contxt">
+                    <h3>스티키<br>
+                        독서노트 4종</h3>
+                    <p>고급스럽고 빈티지한<br>
+                        느낌의 독서노트</p>
+                </div>
+            </a>
+        </div>
+        <div id="s02_box03">
+            <a href="#">
+                <img src="images/new_box03.png" alt="new_box03">
+                <div class="s02_contxt">
+                    <h3>꿈하늘<br>
+                        탁상 캘린더</h3>
+                    <p>아름다운 하늘이 펼쳐진<br>
+                        2020년 탁상달력</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!--end New Item-->
+
+    <!--start Icon Menu-->
+    <section id="section03">
+        <ul id="s03_icons">
+            <li><a href="#">
+                <img src="images/icon_01.png" alt="icon_01">
+                <p>노트/다이어리</p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/icon_02.png" alt="icon_02">
+                <p>커버/북마크</p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/icon_03.png" alt="icon_03">
+                <p>필기구</p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/icon_04.png" alt="icon_04">
+                <p>편지지/포장</p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/icon_05.png" alt="icon_05">
+                <p>메모지/파일</p>
+            </a></li>
+        </ul>
+    </section>
+    <!--end icon Menu-->
+
+    <!--start Banner01-->
+    <section id="section04">
+        <div id="s04_box">
+            <h3>새학기<span class="pink"> 봄맞이 세일</span></h3>
+            <p><span class="pink">에코백 전 품목</span> 30% off</p>
+            <p><span class="pink">~3.31 까지</span></p>
+        </div>
+    </section>
+    <!--end Banner01-->
+
+    <!--start Banner02-->
+    <section id="section05">
+        <div id="s05_box">
+            <h3><span class="pink">봄</span>, 감성돋는 계절</h3>
+            <p>스터디 노트 4종 세트<br>
+                50% 특가</p>
+            <p><span class="cancelline pink">10,000</span> 5,000원<br>
+                <span>~3. 31 까지</span>
+            </p>
+        </div>
+    </section>
+    <!--end Banner02-->
+
+    <!--start Story Book-->
+    <section id="section06">
+        <div class="section_title">
+            <h2>Story Book</h2>
+            <div class="line"></div>
+            <p>특별한 이야기를 담은 테마전</p>
+        </div>
+        <div id="s06_box01"></div>
+        <div id="s06_contxt01">
+            <a href="#">
+                <h3>셜록 홈즈<br>
+                    테마전</h3>
+                <p>베이커 가 221번지 B호에서 출발하는<br>
+                    셜록 홈즈와 존 왓슨의 미스테리 여행</p>
+            </a>
+        </div>
+        <div id="s06_box02"></div>
+        <div id="s06_contxt02">
+            <a href="#">
+                <h3>이상한 나라의 앨리스<br>
+                    테마전</h3>
+                <p>토끼를 따라간 곳에 펼쳐진<br>
+                    신비롭고 이상한 세계</p>
+            </a>
+        </div>
+    </section>
+    <!--end Story Book-->
+
+    <!--start Items-->
+    <section id="section07">
+        <div class="s07_box">
+            <img src="images/item_box01.png" alt="item_box01">
+            <a href="#">
+                <ul>
+                    <li>망아지와 꽃 책갈피 카드</li>
+                    <li>1,800원</li>
+                </ul>
+            </a>
+        </div>
+        <div class="s07_box">
+            <img src="images/item_box02.png" alt="item_box02">
+            <a href="#">
+                <ul>
+                    <li>카네이션 책갈피 카드</li>
+                    <li>4,800원</li>
+                </ul>
+            </a>
+        </div>
+        <div class="s07_box">
+            <img src="images/item_box03.png" alt="item_box03">
+            <a href="#">
+                <ul>
+                    <li>강군 책갈피 카드</li>
+                    <li>1,800원</li>
+                </ul>
+            </a>
+        </div>
+    </section>
+    <!--end Items-->
+
+    <!--start footer-->
+    <footer>
+        <ul id="footer_menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">문의</a></li>
+        </ul>
+        <h2>StoryTailor</h2>
+        <ul id="footer_list">
+            <li>
+                <ul>
+                    <li>경기도 수원시 수원로 123 4층</li>
+                    <li>대표 : 배현지</li>
+                    <li>대표번호 : 031-123-4567</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>사업자등록번호 : 012-34-56789</li>
+                    <li>통신판매업신고번호 : 2020-경기수원-0323</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>개인정보관리자 : 배현지</li>
+                    <li>메일 : storytailor@gmail.com</li>
+                    <li>FAX : 031-123-4567</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="copyright">copyright (c) storytailor.co.kr all rights reserved.<br><br>
+            본 사이트는 포트폴리오를 목적으로 제작되었으며 상업적 이용이 불가능합니다.<br>
+            Orca 컬렉션, 열대어 수납박스에 이용된 일러스트의 저작권은 본 포트폴리오의 제작자에게 있습니다.</p>
+    </footer>
+
+</body>
+</html>
